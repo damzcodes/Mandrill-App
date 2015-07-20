@@ -42,3 +42,6 @@ DEPENDENCIES
   resque (~> 1.25.2)
   resque-scheduler
   sinatra
+
+BUNDLED WITH
+   1.10.2

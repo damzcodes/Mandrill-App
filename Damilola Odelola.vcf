@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.10//EN
+N:Odelola;Damilola;;;
+FN:Damilola Odelola
+ORG:writer | developer | founder;
+EMAIL;type=INTERNET;type=HOME;type=pref:me@damilolaodelola.com
+item1.URL;type=pref:www.damilolaodelola.com
+item1.X-ABLabel:_$!<HomePage>!$_
+item2.URL:www.blackgirl.tech
+item2.X-ABLabel:blackgirl.tech
+item3.URL:www.twitter.com/damiodelola
+item3.X-ABLabel:twitter
+X-ABUID:9D9BDDC7-E6BC-4814-9068-E29834A9B923:ABPerson
+END:VCARD
