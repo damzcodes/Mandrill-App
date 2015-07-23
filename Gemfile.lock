@@ -39,6 +39,7 @@ PLATFORMS
 
 DEPENDENCIES
   mandrill-api
+  rack
   resque (~> 1.25.2)
   resque-scheduler
   sinatra
