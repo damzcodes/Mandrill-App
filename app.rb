@@ -11,7 +11,7 @@ post '/' do
   m = Mandrill::API.new 'asEPl1ngRJzo6FdKFQhsgw'
 
   message = {  
-    :subject=> "Damilola Odelola business card",  
+    :subject=> "Damilola Odelola contact card",  
     :from_name=> "Damilola Odelola",  
     :to=>[
       {  
@@ -654,15 +654,76 @@ DaWlpZ0Fvb29vQUtLS0tBQ2lpaWdBb29vb0FLS0tLQUNpaWlnQW9vb29BLy85az0NClgtQUJVSU
 Q6OUQ5QkREQzctRTZCQy00ODE0LTkwNjgtRTI5ODM0QTlCOTIzOkFCUGVyc29uDQpFTkQ6VkNBU
 kQNCg=="
       }], 
-    :html=>"<html><p>Hi,<br>
-    This email is being sent to you because: <br>
-    <ol>
-      <li> You asked me to </li>
-      <li> You want a vcard version of my contact details (in the event you lose the business card or drown your wallet in a puddle)</li>
-    </ol>
-    Feel free to download my details onto your phone or other digital device.<br>
-    Best, <br>
-    Damilola Odelola</p></html>",  
+    :html=>'<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title></title>
+        <style></style>
+    </head>
+    <body>
+        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+            <tr>
+                <td align="center" valign="top">
+                    <table border="0" cellpadding="20" cellspacing="0" width="600" id="emailContainer">
+                        <tr>
+                            <td align="center" valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+    <tr>
+        <td align="center" valign="top">
+            <table border="0" cellpadding="20" cellspacing="0" width="600" id="emailContainer">
+                <tr>
+                    <td align="center" valign="top" style="background-color: #ffde00;">
+                        <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailHeader">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <h1 style="color: white">Damilola Odelola <small> writer | developer | founder </small></h1>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailBody">
+                            <tr>
+                                <td valign="top" style="font-size:1rem; color: #000;">
+                                    <h2>Hi,</h2>
+                                    <p>This email is being sent to you because:</p>
+                                    <ol>
+                                      <li> You asked me to </li>
+                                      <li> You want a vcard version of my contact details (in the event you lose the business card or drown your wallet in a puddle)</li>
+                                    </ol>
+                                    <p>Feel free to download my details onto your phone or other digital device.</p>
+                                    <p>Best, </p>
+                                    <p>Damilola Odelola</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top">
+                        <table border="0" cellpadding="20" cellspacing="0" width="100%" id="emailFooter">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <p style="font-size:12px; color: #000;"> Damilola Odelola | 2015 </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>',  
     :from_email=>"me@damilolaodelola.com"  
   }  
   sending = m.messages.send message  

@@ -1,4 +1,3 @@
-require 'mail'
 run Sinatra::Application
 use Rack::Static,
   :urls => ["/images", "/js", "/css"],
